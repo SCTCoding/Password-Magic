@@ -38,7 +38,7 @@ echo "Backing Up User File"
 echo ""
 
 #Backup User File
-echo $password | sudo -S cp /var/db/dslocal/nodes/Default/users/$target.plist /Users/$username/Desktop/$target-ORIG.plist
+echo $password | sudo -S cp -n /var/db/dslocal/nodes/Default/users/$target.plist /Users/$username/Desktop/$target-ORIG.plist
 
 echo "Backup Complete"
 echo ""
